@@ -1,1 +1,1 @@
-# http://angeloivon15etec.github.io/MeuCurriculo_TurmaA
+# http://angeloivon15etec.github.io/MeuCurriculo
