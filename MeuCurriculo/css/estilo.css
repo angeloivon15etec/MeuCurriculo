@@ -1,0 +1,28 @@
+.navbar-brand img {
+    height: 40px;
+    margin-right: auto;
+}
+.navbar-nav {
+    margin-left: auto; 
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+.nav-item {
+    padding: 5px 10px;
+}
+
+.navbar-toggler {
+    order: 1;
+}
+.navbar-collapse {
+    order: 0;
+}
+.navbar-brand {
+    order: 2;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
