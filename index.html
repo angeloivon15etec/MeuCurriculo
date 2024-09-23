@@ -6,46 +6,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Meu Site com BootsTrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>CurriculoWebBoosTrap</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+    <style>
+        .navbar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1020;
+            background-color: #343a40;
+        }
+    
+        /* Remove o espaço entre o topo e o conteúdo */
+        body {
+            margin: 0;
+        }
+    
+        /* Ajusta a altura da logo */
+        .navbar-brand img {
+            max-height: 50px;
+        }
+    </style>
+    
+
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="img/cropped-logo-etec.png" alt="Logo"> 
+            <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Sobre</a>
+                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Trabalho</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Habilidades
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <a class="nav-link" href="#cursos">Cursos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#competencias">Competências</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre-o-site">Sobre o Site</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+    <section id="inicio">
+        <div class="banner">
+            <img src="img/que horror.jfif" alt="Descrição da imagem">
+            <div class="banner-text">
+                <h2><strong>Olá, eu sou Angelo Ivon Domingues Tenorio de Almeida</strong></h2>
+                <li>Sou aluno da escola técnica ETEC Maria Cristina Medeiros</li>
+                <li>Sou alguém dedicado e esforçado para cumprir meus objetivos</li>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cursos">
+        <div class="top-text">Cursos</div>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="img/cropped-Logo3.jpg" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Escola técnica cursando TI</h5>
+                            <p class="card-text">A Etec é uma escola técnica com ensino médio onde estudo no período da tarde com o curso de TI aplicado dentro do ensino.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="card">
+                        <img src="img/LS_Idiomas_Logo_250.png" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <h5 class="card-title">LS Idiomas</h5>
+                            <p class="card-text">Escola de inglês localizada em Ribeirão Pires onde estudo há 3 anos, estando no nível intermediário.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-start">
+                    <div class="card">
+                        <img src="img/images.png" class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Proerd</h5>
+                            <p class="card-text">Proerd é o projeto estudantil que incentiva o não uso de drogas, onde me formei.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <div class="card">
+                        <img src="img/logo.png" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Escotec</h5>
+                            <p class="card-text">Este card está alinhado à esquerda na segunda linha.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="competencias">
+        <div class="page-title">Competências Socioemocionais</div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default...
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default...
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato">
+        <h2>INFORMAÇÕES PARA CONTATO</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">NOME</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Exemplo: Cleitin Douglas">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInputEmail" class="form-label">EMAIL</label>
+                        <input type="email" class="form-control" id="formGroupExampleInputEmail" placeholder="Exemplo: EMAIL@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">TELEFONE DE CONTATO</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Exemplo: (00) 00000-0000">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col-md-6">
+                    <div class="border p-3" style="height: 100%;">
+                        <h5><strong>Angelo Ivon</strong></h5>
+                        <p>estudante</p>
+                        <h5><strong>telefone</strong></h5>
+                        <p>11 96784-0747</p>
+                        <h5><strong>Email</strong></h5>
+                        <p>Angelo.ivon05@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sobre-o-site">
+        <footer style="text-align: center; margin-top: 40px; padding: 20px; border-top: 2px solid black;">
+            <h3><strong>Informação sobre o desenvolvimento do site</strong></h3>
+            <div class="content-area">
+                <p class="text">Este site é uma forma de comunicar minhas competências e a mim mesmo para o mercado de trabalho. Pretendo continuar dando algumas atualizações, porém ele é único e exclusivo para possíveis contratações.</p>
+            </div>
+        </footer>
+    </section>
+    
+    <!-- Link para o Bootstrap CSS e JavaScript (se ainda não estiver incluído) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+
   <script src="js/bootstrap.js"></script>
 </body>
 </html>

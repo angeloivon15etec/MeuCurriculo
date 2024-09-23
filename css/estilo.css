@@ -1,28 +1,77 @@
 .navbar-brand img {
-    height: 40px;
-    margin-right: auto;
+height: 40px;
+margin-left: auto;
 }
 .navbar-nav {
-    margin-left: auto; 
-    display: flex;
-    flex-direction: column;
-    flex-direction: column-reverse;
+ margin-left: auto; 
 }
 .nav-item {
-    padding: 5px 10px;
-}
-
-.navbar-toggler {
-    order: 1;
+padding: 5px 10px;
 }
 .navbar-collapse {
-    order: 0;
+flex-grow: 1;
+justify-content: flex-end;
 }
-.navbar-brand {
-    order: 2;
+.banner {
+display: flex;
+background-image:url("../img/12616882-fundo-tecnologia-inteligencia-artificial-mecanica-resumo-digital-vetor.jpg");
+align-items: center;
+justify-content: center; 
+background-color: #f8f9fa; 
+padding: 20px; 
+margin: 20px 0; 
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    
+
+.banner img {
+max-width: 500px;
+height: auto;
+margin-right: 20px;
+}
+
+.banner-text {
+max-width: 600px;
+text-align: center;
+}
+.top-text {
+text-align: center;
+font-size: 36px; 
+font-weight: bold; 
+margin-top: 20px; 
+margin-bottom: 20px;
+}
+.card {
+height: 100%;
+max-width: 300px;
+margin: 0 auto; 
+}
+.card-img-top {
+height: 150px;
+object-fit: cover;
+}
+.card-body {
+padding: 15px;
+}
+.page-title {
+text-align: center;
+margin: 20px 0; 
+font-size: 2rem;
+font-weight: bold;
+color: #343a40;
+}
+.content-area {
+border: 1px solid black;
+padding: 15px; 
+margin: 20px auto;
+max-width: 600px;
+}
+
+footer {
+background-color: #f8f9fa;
+padding: 20px;
+}
+
+h3 {
+margin-bottom: 15px;
 }
