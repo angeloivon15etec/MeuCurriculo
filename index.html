@@ -10,66 +10,46 @@
     <title>CurriculoWebBoosTrap</title>
 </head>
 <body>
-    <style>
-        .navbar {
-            position: sticky;
-            top: 0;
-            width: 100%;
-            z-index: 1020;
-            background-color: #343a40;
-        }
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/cropped-logo-etec.png" alt="Logo">
+            </a>
     
-        /* Remove o espaço entre o topo e o conteúdo */
-        body {
-            margin: 0;
-        }
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
     
-        /* Ajusta a altura da logo */
-        .navbar-brand img {
-            max-height: 50px;
-        }
-    </style>
-    
-
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#cursos">Cursos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#competencias">Competências</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre-o-site">Sobre o Site</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competencias">Competências</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-o-site">Sobre o Site</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+    
 
     <section id="inicio">
         <div class="banner">
             <img src="img/que horror.jfif" alt="Descrição da imagem">
             <div class="banner-text">
                 <h2><strong>Olá, eu sou Angelo Ivon Domingues Tenorio de Almeida</strong></h2>
-                <li>Sou aluno da escola técnica ETEC Maria Cristina Medeiros</li>
-                <li>Sou alguém dedicado e esforçado para cumprir meus objetivos</li>
+                <li><strong> aluno da escola técnica ETEC Maria Cristina Medeiros</strong></li>
+                <li><strong>Sou alguém dedicado e esforçado para cumprir meus objetivos</strong></li>
             </div>
         </div>
     </section>
@@ -83,7 +63,7 @@
                         <img src="img/cropped-Logo3.jpg" class="card-img-top" alt="Card 1">
                         <div class="card-body">
                             <h5 class="card-title">Escola técnica cursando TI</h5>
-                            <p class="card-text">A Etec é uma escola técnica com ensino médio onde estudo no período da tarde com o curso de TI aplicado dentro do ensino.</p>
+                            <p class="card-text"> Etec é uma escola técnica com ensino médio onde estudo no período da tarde com o curso de TI aplicado dentro do ensino.</p>
                         </div>
                     </div>
                 </div>
@@ -113,7 +93,7 @@
                         <img src="img/logo.png" class="card-img-top" alt="Card 4">
                         <div class="card-body">
                             <h5 class="card-title">Escotec</h5>
-                            <p class="card-text">Este card está alinhado à esquerda na segunda linha.</p>
+                            <p class="card-text">cursei informatica nesta escola alem de aprender um pouco de market e o basico da informatica.</p>
                         </div>
                     </div>
                 </div>
@@ -123,43 +103,44 @@
     
     <section id="competencias">
         <div class="page-title">Competências Socioemocionais</div>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion" id="accordionExample">
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        Accordion Item #1
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                    <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default...
-                    </div>
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Competencias no trabalho em equipe
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Sempre que tenho a oportunidade de colaborar com outras pessoas, sinto que podemos alcançar resultados ainda melhores juntos. Gosto de ouvir as ideias dos outros, dividir responsabilidades e ajudar quem precisa, porque acredito que cada pessoa tem algo único para contribuir. Entendo a importância da comunicação e do respeito, pois é isso que mantém a equipe unida e focada nos objetivos.
                 </div>
+              </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        Accordion Item #2
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default...
-                    </div>
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                 competencias na resolução de problemas
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    tanto na escola quanto no dia a dia. Sempre que surge uma dificuldade, procuro manter a calma e pensar nas possíveis soluções, em vez de me desesperar. Gosto de analisar a situação, entender o que está ao meu alcance e buscar a melhor forma de agir. Isso me ajuda a ser mais criativo e a não desistir quando algo não dá certo de primeira. Resolver problemas me ensina a ser mais resiliente.
                 </div>
+              </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        Accordion Item #3
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default...
-                    </div>
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                competente na comunicação
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Gosto de ouvir os outros com atenção e procurar falar de forma clara para evitar mal-entendidos. Acho importante respeitar diferentes opiniões e saber como me colocar em uma conversa, seja em grupo ou individualmente. A comunicação me ajuda a resolver conflitos e a trabalhar melhor em equipe, além de fortalecer minhas relações, tanto na escola quanto fora dela.
                 </div>
+              </div>
             </div>
+          </div>
         </div>
     </section>
     
@@ -190,6 +171,8 @@
                         <p>11 96784-0747</p>
                         <h5><strong>Email</strong></h5>
                         <p>Angelo.ivon05@gmail.com</p>
+                        <h5><strong>Endereço</strong></h5>
+                        <p>Rua ariston Veríssimo da Silva N105 Jardim ana Rosa palmeiras suzano SP 08635-470</p>
                     </div>
                 </div>
             </div>
@@ -204,8 +187,6 @@
             </div>
         </footer>
     </section>
-    
-    <!-- Link para o Bootstrap CSS e JavaScript (se ainda não estiver incluído) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     
