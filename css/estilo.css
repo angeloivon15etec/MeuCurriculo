@@ -69,3 +69,12 @@ padding: 20px;
 h3 {
 margin-bottom: 15px;
 }
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1020;
+    background-color: #343a40;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
+}
